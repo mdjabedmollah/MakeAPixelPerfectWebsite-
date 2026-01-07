@@ -1,0 +1,58 @@
+const doctors = [
+  {
+    id: 1,
+    name: "Dr. Cameron Williamson",
+    degree: "MBBS, MD - General Medicine, DNB",
+    reg: "BD 12451254",
+    experience: "5+ Years Experience",
+    status: "Available",
+    image: "/doctor.jpg",
+  },
+  {
+    id: 2,
+    name: "Dr. Cameron Williamson",
+    degree: "MBBS, MD - General Medicine, DNB",
+    reg: "BD 12451254",
+    experience: "5+ Years Experience",
+    status: "Available",
+    image: "/doctor.jpg",
+  },
+  {
+    id: 3,
+    name: "Dr. Cameron Williamson",
+    degree: "MBBS, MD - General Medicine, DNB",
+    reg: "BD 12451254",
+    experience: "5+ Years Experience",
+    status: "Available",
+    image: "/doctor.jpg",
+  },
+  {
+    id: 4,
+    name: "Dr. Cameron Williamson",
+    degree: "MBBS, MD - General Medicine, DNB",
+    reg: "BD 12451254",
+    experience: "5+ Years Experience",
+    status: "Available",
+    image: "/doctor.jpg",
+  },
+  {
+    id: 5,
+    name: "Dr. Cameron Williamson",
+    degree: "MBBS, MD - General Medicine, DNB",
+    reg: "BD 12451254",
+    experience: "5+ Years Experience",
+    status: "Available",
+    image: "/doctor.jpg",
+  },
+  {
+    id: 6,
+    name: "Dr. Cameron Williamson",
+    degree: "MBBS, MD - General Medicine, DNB",
+    reg: "BD 12451254",
+    experience: "5+ Years Experience",
+    status: "Available",
+    image: "/doctor.jpg",
+  },
+];
+
+export default doctors;
