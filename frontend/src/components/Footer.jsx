@@ -36,7 +36,6 @@ const Footer = () => {
           </a>
         </nav>
 
-        {/* Divider */}
         <div className="border-t max-w-xl mx-auto mb-8"></div>
 
         {/* Social Icons */}

@@ -18,8 +18,8 @@ const DoctorChart = () => {
       <ResponsiveContainer width="100%" height={320}>
         <BarChart
           data={chartData}
-          barSize={110}              // ✅ wider bell
-          barCategoryGap={60}        // ✅ space between bells
+          barSize={110}              
+          barCategoryGap={60}        
           margin={{ top: 10, right: 30, left: 20, bottom: 10 }}
         >
           <CartesianGrid strokeDasharray="3 3" />
