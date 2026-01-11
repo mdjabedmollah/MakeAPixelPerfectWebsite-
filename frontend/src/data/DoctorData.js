@@ -10,7 +10,7 @@ const doctors = [
   },
   {
     id: 2,
-    name: "Dr. Cameron Williamson",
+    name: "Dr. Shamim",
     degree: "MBBS, MD - General Medicine, DNB",
     reg: "BD 12451254",
     experience: "5+ Years Experience",
@@ -19,7 +19,7 @@ const doctors = [
   },
   {
     id: 3,
-    name: "Dr. Cameron Williamson",
+    name: "Dr. Jewel",
     degree: "MBBS, MD - General Medicine, DNB",
     reg: "BD 12451254",
     experience: "5+ Years Experience",
@@ -28,7 +28,7 @@ const doctors = [
   },
   {
     id: 4,
-    name: "Dr. Cameron Williamson",
+    name: "Dr. Shamim",
     degree: "MBBS, MD - General Medicine, DNB",
     reg: "BD 12451254",
     experience: "5+ Years Experience",
