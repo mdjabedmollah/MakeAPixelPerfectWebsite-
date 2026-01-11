@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const DoctorCard = ({ doctor }) => {
   return (
@@ -23,20 +24,19 @@ const DoctorCard = ({ doctor }) => {
       </div>
 
       {/* Info */}
-      <h3 className="mt-3 font-semibold text-lg">
-        {doctor.name}
-      </h3>
-      <p className="text-sm text-gray-500">
-        {doctor.degree}
-      </p>
+      <h3 className="mt-3 font-semibold text-lg">{doctor.name}</h3>
+      <p className="text-sm text-gray-500">{doctor.degree}</p>
 
-      <p className="text-sm text-gray-500 mt-2">
-        Reg No: {doctor.reg}
-      </p>
+      <p className="text-sm text-gray-500 mt-2">Reg No: {doctor.reg}</p>
 
       {/* Button */}
       <button className="mt-4 w-full border border-blue-500 text-blue-600 py-2 rounded-full hover:bg-blue-50 transition">
-        View Details
+        <Link
+          to={`/doctors/${doctor.id}`}
+          
+        >
+          View Details
+        </Link>
       </button>
     </div>
   );
