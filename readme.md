@@ -11,5 +11,11 @@ npm install
 app.use(cors({ origin: "http://localhost:5173" }));
 
 
+## api
+| Method | Endpoint             | Description       |
+| ------ | -------------------- | ----------------- |
+| POST   | `/api/v1/doctor`     | Add new doctor    |
+| GET    | `/api/v1/doctor`     | Get all doctors   |
+| GET    | `/api/v1/doctor/:id` | Get single doctor |
 
 
