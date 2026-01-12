@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const appointmentSchema = new mongoose.Schema(
   {
-    doctorName: {
+    name: {
       type: String,
       required: true,
       trim: true,

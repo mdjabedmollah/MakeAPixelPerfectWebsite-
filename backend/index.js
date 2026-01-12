@@ -2,6 +2,7 @@ import express from "express";
 import nodenv from "dotenv";
 import { dbConnection } from "./utils/db.js";
 import cors from "cors";
+import doctorRoute from './routes/doctorRoute.js'
 const app = express();
 nodenv.config();
 const port = process.env.PORT || 3000;
@@ -16,6 +17,9 @@ app.use(
     credentials: true,
   })
 );
+//route and api
+app.use('/api/v1',doctorRoute)
+
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
