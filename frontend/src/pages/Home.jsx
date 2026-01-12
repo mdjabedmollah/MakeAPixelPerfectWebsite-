@@ -1,11 +1,25 @@
-
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import HeroSection from "../components/HeroSection";
 import BestDoctors from "../components/BestDoctors";
-import doctors from "../data/DoctorData";
+import { getAllDoctors } from "../api/DoctorApi";
 
 const Home = () => {
-  const [filteredDoctors, setFilteredDoctors] = useState(doctors);
+  const [doctors, setDoctors] = useState([]);
+  const [filteredDoctors, setFilteredDoctors] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    getAllDoctors()
+      .then((res) => {
+        setDoctors(res.data.data);
+        setFilteredDoctors(res.data.data);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error(err);
+        setLoading(false);
+      });
+  }, []);
 
   const handleSearch = (query) => {
     const result = doctors.filter((doc) =>
@@ -13,6 +27,14 @@ const Home = () => {
     );
     setFilteredDoctors(result);
   };
+
+  if (loading) {
+    return (
+      <div className="text-center py-20 text-gray-500">
+        Loading doctors...
+      </div>
+    );
+  }
 
   return (
     <>
@@ -23,20 +45,3 @@ const Home = () => {
 };
 
 export default Home;
-
-// import React from "react";
-// import HeroSection from "../components/HeroSection";
-// import BestDoctors from "../components/BestDoctors";
-// import StatsSection from "../components/StatsSection";
-
-// const Home = () => {
-//   return (
-//     <div>
-//       <HeroSection />
-//       <BestDoctors />
-//       <StatsSection/>
-//     </div>
-//   );
-// };
-
-// export default Home;
